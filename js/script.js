@@ -37,9 +37,10 @@ plagBtn.addEventListener('click', play = e => {
 
     userInfo.name = playerName;
     userInfo.score = 0;
+    h3MatchPoints.innerText = 'Match points: 0';
 
     console.log(userInfo);
-    showGame();
+    showGame(userInfo);
 });
 
 
@@ -65,7 +66,7 @@ for (let i = 0; i < images.length; i++) {
             userInfo.score++;
             h3MatchPoints.innerText = `Match points: ${userInfo.score}`;
             console.log(userInfo);
-            displayWinner()
+            displayWinner(userInfo)
         }
 
 
@@ -113,7 +114,7 @@ function evalAnswer(playersChoice, computersChoice) {
     return playerPoints, computerPoints;
 }
 
-function displayWinner() {
+function displayWinner(userInfo) {
     introContainer.style.display = 'none';
     for (let i = 0; i < images.length; i++) {
         images[i].style.display = 'none';
@@ -146,7 +147,7 @@ function displayWinner() {
     quitBtn.addEventListener('click', changeName = () => {
         introContainer.style.display = 'block';
         gameContainer.style.display = 'none';
-
+        userInfo.score = 0;
         winnerContainer.remove();
         reset();
     });
@@ -201,7 +202,8 @@ function hideGame() {
     introContainer.style.display = 'block';
 }
 
-function showGame() {
+function showGame(userInfo) {
+    userInfo.score = 0;
     for (let i = 0; i < images.length; i++) {
         images[i].style.display = 'block';
     }
