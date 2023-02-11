@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissors</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" defer></script>
+
+</head>
+
+<body>
+    <aside class="intro-text-container" id="intro-container">
+        <h1>Rock, paper, scissors</h1>
+        <p>Do you have what it takes to beat the computer in a classic rock paper scissors game?</p>
+
+        <div class="computer-image-container">
+            <img src="./images/angry-computer.jpg" alt="angry computer">
+            <div class="speech-bubble-container">
+                <img src="./images/speech-bubble.png" alt="Speach bubble">
+                <p>I doubt it!</p>
+            </div>
+        </div>
+
+        <form action="">
+            <input type="text" id="name-input" placeholder="Enter your name" required>
+            <button id="play-button">Play</button>
+        </form>
+    </aside>
+
+    <main id="main-game-container">
+        <section class="game-images-container">
+            <img id="game-images" src="./images/rock.png" alt="rock">
+            <img id="game-images"src="./images/torn-paper.png" alt="paper">
+            <img id="game-images"src="./images/Scissor.png" alt="scissor">
+        </section>
+        
+        <div class="score-container">
+            <div>
+                <h2 id="player-name"></h2>
+                <h3 id="player-choice"></h2>
+                <h3 id="player-score"></h2>
+                <h3 id="match-points"></h3>
+            </div>
+
+            <div>
+                <h2 id="computer-name"></h2>
+                <h3 id="computer-choice"></h2>
+                <h3 id="computer-score"></h2>
+            </div>
+        </div>
+    </main>
+
+    <section class="leaderbord-container" id="leaderbord"></section>
+</body>
+
+</html>

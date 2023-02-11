@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+    font-size: 4vh;
+}
+
+.computer-image-container {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.speech-bubble-container {
+    margin-top: -4rem;
+    position: relative;
+    text-align: center;
+}
+
+.speech-bubble-container p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: smaller;
+}
+
+.intro-text-container form {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-text-container form input {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.intro-text-container form input:focus {
+    background-color: aquamarine;
+    transition: background-color 1s;
+}
+
+
+.intro-text-container form button {
+    margin-top: 2rem;
+    font-size: 4rem;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.intro-text-container form button:hover {
+    background-color: aquamarine;
+    transition: background-color 1s;
+}
+
+.game-images-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.game-images-container img {
+    max-width: calc((100vw/3) - 3rem);
+    max-height: 40vh;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.pop-up{
+    display: flex;
+    margin-top: 10rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pop-up h1{
+    font-size: 5vw;
+}
+
+.pop-up button{
+    margin-top: 1rem;
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.leaderboard-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 15rem 4rem 0;
+    padding: 1rem;
+    background-color: lightcyan;
+}
+
+.leaderboard-container div{
+    width: 50%;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem;
+}
