@@ -1,2 +1,4 @@
-# FE22-js2-mp1-eddie-peters
-Rock paper sciccors - game with realtime database
+# Rock paper scissors game
+Play rock paper sciccors against the computer. 
+
+This project uses realtime database from Firebase to update a leaderboard with the best scores. 
